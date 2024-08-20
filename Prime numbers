@@ -1,0 +1,34 @@
+//Write a c program to show the prime number between n1(User input) to n2(User input) and sum of those number.
+
+#include<stdio.h>
+int main()
+{
+    int n1,n2,i,j,f=0,s=0;
+    printf("Enter the start number: ");
+    scanf("%d",&n1);
+    if(n1==1)
+    {
+        n1=2;
+    }
+    printf("Enter the second number: ");
+    scanf("%d",&n2);
+    for(i=n1;i<=n2;i++)
+    {
+        for(j=2;j<i;j++)
+        {
+            if(i%j==0)
+            {
+                f=f+1;
+                break;
+            }
+        }
+        if(f==0)
+        {
+            printf("%d\n",i);
+            s=s+i;
+        }
+        f=0;
+    }
+    printf("Sum: %d",s);
+    return 0;
+}
