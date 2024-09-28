@@ -2,23 +2,26 @@
 #include<stdio.h>
 int main()
 {
-    int n,d,r=0,c;
+    int r=0, n,c,e;
+    up:
     printf("Please enter a number: ");
     scanf("%d",&n);
     c=n;
     while(n!=0)
     {
-        d=n%10;
-        n=n/10;
-        r=r*10+d;
+       e=n%10;
+       n=n/10;
+       r=e+r*10;
     }
-    if(c==r)
+    if(r==c)
     {
-        printf("Palindrome number.");
+        printf("%d is a palindrome number.\n",c);
     }
     else
     {
-        printf("Not palindrome number.");
+        printf("%d is not a palindrome number.\n",c);
     }
+    r=0;
+    goto up;
     return 0;
 }
