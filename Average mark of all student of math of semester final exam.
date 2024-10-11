@@ -1,0 +1,18 @@
+// Average mark of all student of math of semester final exam.
+#include<stdio.h>
+int main()
+{
+    int a[1000],i,n,s=0;
+    float ave;
+    printf("Enter the student number: ");
+    scanf("%d",&n);
+    printf("Enter the mark of math of semester final exlamination: ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        s=s+a[i];
+    }
+    ave=(float)s/(float)n;
+    printf("The average mark of all student: %f",ave);
+    return 0;
+}
