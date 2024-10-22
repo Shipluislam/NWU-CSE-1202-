@@ -1,0 +1,22 @@
+// Max value of array.
+#include<stdio.h>
+int main()
+{
+    int a[100],i,r,m=0,j;
+    printf("Enter the number range: ");
+    scanf("%d",&r);
+    for(i=0;i<r;i++)
+    {
+        printf("Enter number a[%d]: ",i+1);
+        scanf("%d",&a[i]);
+    }
+    for(j=0;j<r;j++)
+    {
+        if(a[j]>m)
+        {
+            m=a[j];
+        }
+    }
+    printf("The maximum value is: %d",m);
+    return 0;
+}
