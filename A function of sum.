@@ -1,0 +1,11 @@
+//A function of sum.
+#include<stdio.h>
+add(int a, int b)
+{
+    return a+b;
+}
+main()
+{
+    int s=add(2,3);
+    printf("%d",s);
+}
