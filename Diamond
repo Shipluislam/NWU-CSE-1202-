@@ -1,0 +1,36 @@
+// Diamond
+#include<stdio.h>
+int main()
+{
+    int r,i,s,j;
+    printf("Enter the row: ");
+    scanf("%d",&r);
+    for(i=0;i<r;i++)
+    {
+        for(s=i;s<r-1;s++)
+        {
+            printf(" ");
+        }
+        for(j=0;j<=i;j++)
+        {
+            printf("$ ");
+        }
+        printf("\n");
+    }
+
+
+
+    for(i=0;i<r-1;i++)
+    {
+        for(s=0;s<=i;s++)
+        {
+            printf(" ");
+        }
+        for(j=r-1; j>i; j--)
+        {
+            printf("S ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
