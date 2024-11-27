@@ -1,0 +1,21 @@
+// The sum of the matrix elements.
+#include<stdio.h>
+int main()
+{
+    int i,j,a[100][100],r,c,s=0;
+    printf("Enter the row: ");
+    scanf("%d",&r);
+    printf("Enter the column: ");
+    scanf("%d",&c);
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("Enter the value of A[%d][%d]: ",i,j);
+            scanf("%d",&a[i][j]);
+            s=s+a[i][j];
+        }
+    }
+    printf("Sum: %d",s);
+    return 0;
+}
